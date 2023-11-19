@@ -49,10 +49,9 @@ function render(variables = {}) {
           ${variables.role == null ? "Role" : variables.role}
           </h2>
           <h3>
-          ${variables.city == null ? "City, Country" : variables.city}
-          ${variables.city == "Miami" ? ", USA" : ""}
-          ${variables.city == "Toronto" ? ", CA" : ""}
-          ${variables.city == "Amsterdam" ? ", NL" : ""}
+          ${variables.city == null ? "City, " : variables.city}
+
+          ${variables.country == null ? "Country" : variables.country}
           </h3>
           
           <ul class=${variables.socialMediaPosition}>
